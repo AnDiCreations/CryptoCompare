@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+  >
+
+ <TextView
+     android:id="@+id/bitcoin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="60dp"
+     android:text="@string/Bitcoin"
+     android:textColor="#ffffff"
+     android:textSize="25sp" />
+
+   <ImageView
+       android:id="@+id/imgL"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_below="@+id/bitcoin"
+       android:layout_centerHorizontal="true"
+       android:contentDescription="@string/dis"
+       android:gravity="center"
+       android:src="@drawable/bitcoin" />
+
+   <EditText
+       android:id="@+id/editText3"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:inputType="numberDecimal"
+       android:singleLine="true" 
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:ems="10" 
+       android:background="#ffffff"
+       >
+
+       <requestFocus />
+   </EditText>
+
+     <EditText
+         android:id="@+id/editText4"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editText3"
+         android:layout_alignRight="@+id/editText3"
+         android:layout_below="@+id/results"
+         android:layout_marginTop="26dp"
+         android:background="#ffffff"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:singleLine="true" 
+         android:hint="@string/hint"
+         />
+
+     <TextView
+         android:id="@+id/enter"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/editText3"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="14dp"
+         android:text="@string/enter"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:textStyle="italic" />
+
+     <TextView
+         android:id="@+id/results"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/editText3"
+         android:layout_marginTop="28dp"
+         android:text="@string/results"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:textStyle="italic" />
+
+</RelativeLayout>

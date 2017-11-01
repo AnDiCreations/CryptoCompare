@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+  >
+
+ <TextView
+     android:id="@+id/eht"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="60dp"
+     android:text="@string/Eth"
+     android:textColor="#ffffff"
+     android:textSize="25sp" />
+
+   <ImageView
+       android:id="@+id/imgLo"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_below="@+id/eht"
+       android:layout_centerHorizontal="true"
+       android:contentDescription="@string/dis"
+       android:gravity="center"
+       android:src="@drawable/eth" />
+
+   <EditText
+       android:id="@+id/editText1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:inputType="numberDecimal"
+       android:singleLine="true" 
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:ems="10" 
+       android:background="#ffffff"
+       >
+
+       <requestFocus />
+   </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/results"
+        android:layout_alignRight="@+id/results"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="true" 
+        android:background="#ffffff"
+         android:hint="@string/hint"
+        />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/imgLo"
+        android:text="@string/enter"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+     <TextView
+         android:id="@+id/results"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editText1"
+         android:layout_alignRight="@+id/editText1"
+         android:layout_below="@+id/editText1"
+         android:layout_marginTop="15dp"
+         android:text="@string/results"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:textStyle="italic" />
+
+</RelativeLayout>

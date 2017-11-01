@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+      
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="29dp"
+        android:text="@string/tutorialtit"
+        android:textColor="#ffffff"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        />
+      <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical"
+     >
+
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="25dp"
+               android:contentDescription="@string/dis"
+               android:paddingLeft="16dp"
+               android:src="@drawable/bitcoin" />
+
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="35dp"
+               android:contentDescription="@string/dis"
+               android:paddingLeft="16dp"
+               android:src="@drawable/eth" />
+        
+    </RelativeLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="6.43"
+          android:gravity="center"
+          android:paddingLeft="64dp"
+          android:paddingRight="64dp"
+          android:text="@string/tutorial"
+          android:textColor="#ffffff"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+</LinearLayout>
